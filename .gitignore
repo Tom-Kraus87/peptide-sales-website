@@ -1,0 +1,6 @@
+peptide_temp.xlsx
+__pycache__/
+*.pyc
+.env
+.DS_Store
+Thumbs.db

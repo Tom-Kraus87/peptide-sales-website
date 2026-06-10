@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse our full catalog of research peptides with detailed descriptions, strengths, and product imagery."
+    />
+    <title>Peptide Catalog | Research Peptide Sales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">PeptideLab</span>
+            <span class="brand-tagline">Research catalog</span>
+          </span>
+        </a>
+        <a class="header-cta" href="#contact">Request quote</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-inner">
+          <p class="eyebrow">Premium research peptides</p>
+          <h1>Explore our complete peptide catalog</h1>
+          <p class="hero-copy">
+            Every product includes its vial image, strength, category, and a
+            detailed description sourced from our categorized product database.
+          </p>
+          <div class="hero-stats" id="hero-stats" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog-toolbar">
+            <label class="search-field">
+              <span class="sr-only">Search peptides</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Zm0-2a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Zm8.94 2.06-3.9-3.9 1.42-1.42 3.9 3.9-1.42 1.42Z"
+                />
+              </svg>
+              <input
+                id="search-input"
+                type="search"
+                placeholder="Search by name, SKU, or category..."
+                autocomplete="off"
+              />
+            </label>
+            <div class="toolbar-meta">
+              <span id="results-count">Loading products...</span>
+              <button class="ghost-button" id="clear-filters" type="button" hidden>
+                Clear filters
+              </button>
+            </div>
+          </div>
+
+          <div class="category-filters" id="category-filters" aria-label="Filter by category"></div>
+
+          <div class="product-grid" id="product-grid"></div>
+          <div class="empty-state" id="empty-state" hidden>
+            <h2>No products found</h2>
+            <p>Try a different search term or category filter.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container contact-inner">
+          <div>
+            <p class="eyebrow">Sales inquiries</p>
+            <h2>Ready to place an order?</h2>
+            <p>
+              Contact our sales team with the SKU codes you need. We will confirm
+              availability, pricing, and shipping details.
+            </p>
+          </div>
+          <div class="contact-card">
+            <p class="contact-label">Email sales</p>
+            <a class="contact-link" href="mailto:sales@peptidelab.com">sales@peptidelab.com</a>
+            <p class="contact-note">
+              Include product names and SKU codes from this catalog in your message.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          <strong>Important:</strong> Products listed are for research and catalog
+          reference only. This site does not provide medical advice, dosing guidance,
+          or recommendations for use. Verify legality, licensing, and product quality
+          before purchase.
+        </p>
+        <p class="footer-meta">Catalog generated from categorized product descriptions.</p>
+      </div>
+    </footer>
+
+    <dialog class="product-modal" id="product-modal" aria-labelledby="modal-title">
+      <div class="modal-shell">
+        <button class="modal-close" type="button" aria-label="Close product details">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </dialog>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
