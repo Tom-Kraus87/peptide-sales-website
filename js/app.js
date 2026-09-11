@@ -135,10 +135,16 @@ function createProductCard(product) {
         </div>
         <span class="category-pill">${escapeHtml(product.category)}</span>
         <p class="description">${escapeHtml(product.description)}</p>
-        <span class="status-badge">${escapeHtml(product.status)}</span>
+        <div class="product-card__labels">
+          <span class="status-badge">${escapeHtml(product.status)}</span>
+          <span class="brand-label">
+            <img src="images/aura-kinetics-logo.jpg" alt="" width="18" height="18" />
+            Aura Kinetics Peptide Sciences
+          </span>
+        </div>
         <div class="product-card__actions">
           <button type="button" data-action="details" data-sku="${escapeAttribute(product.sku)}">View details</button>
-          <a class="secondary-action" href="mailto:sales@peptidelab.com?subject=${escapeAttribute(
+          <a class="secondary-action" href="mailto:sales@aurakinetics.com?subject=${escapeAttribute(
             `Quote request for ${product.sku}`
           )}&body=${escapeAttribute(
             `Hello,\n\nI would like pricing and availability for:\n\nProduct: ${product.name}\nSKU: ${product.sku}\nStrength: ${product.strength}\n\nThank you.`
@@ -169,6 +175,10 @@ function openProductModal(product) {
         <p class="strength">${escapeHtml(product.strength)}</p>
         <span class="sku-badge">${escapeHtml(product.sku)}</span>
         <span class="status-badge">${escapeHtml(product.status)}</span>
+        <span class="brand-label">
+          <img src="images/aura-kinetics-logo.jpg" alt="" width="18" height="18" />
+          Aura Kinetics Peptide Sciences
+        </span>
       </div>
     </div>
     <div class="modal-section">
@@ -184,7 +194,7 @@ function openProductModal(product) {
       ${sourceLinks}
     </div>
     <div class="product-card__actions">
-      <a class="secondary-action" href="mailto:sales@peptidelab.com?subject=${escapeAttribute(
+      <a class="secondary-action" href="mailto:sales@aurakinetics.com?subject=${escapeAttribute(
         `Quote request for ${product.sku}`
       )}&body=${escapeAttribute(
         `Hello,\n\nI would like pricing and availability for:\n\nProduct: ${product.name}\nSKU: ${product.sku}\nStrength: ${product.strength}\n\nThank you.`
