@@ -117,14 +117,40 @@ function renderProducts() {
     .join("");
 }
 
-function createProductCard(product) {
-  const imageMarkup = product.image
-    ? `<img src="${escapeAttribute(product.image)}" alt="${escapeAttribute(product.name)} vial - ${escapeAttribute(product.strength)}" loading="lazy" width="180" height="180" />`
-    : `<div class="description">Image unavailable</div>`;
+function createVialMarkup(product, size = 180) {
+  if (!product.image) {
+    return `<div class="description">Image unavailable</div>`;
+  }
 
   return `
+    <div class="vial-frame">
+      <img
+        class="vial-frame__photo"
+        src="${escapeAttribute(product.image)}"
+        alt="${escapeAttribute(product.name)} vial - ${escapeAttribute(product.strength)}"
+        loading="lazy"
+        width="${size}"
+        height="${Math.round((size * 240) / 180)}"
+      />
+      <div class="vial-label">
+        <div class="vial-label__brand">
+          <img src="images/aura-kinetics-logo.jpg" alt="" width="24" height="24" />
+          <span>Aura Kinetics</span>
+        </div>
+        <div class="vial-label__body">
+          <strong class="vial-label__name">${escapeHtml(product.name)}</strong>
+          <span class="vial-label__strength">${escapeHtml(product.strength)}</span>
+          <span class="vial-label__sku">SKU ${escapeHtml(product.sku)}</span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function createProductCard(product) {
+  return `
     <article class="product-card" data-sku="${escapeAttribute(product.sku)}">
-      <div class="product-card__media">${imageMarkup}</div>
+      <div class="product-card__media">${createVialMarkup(product, 180)}</div>
       <div class="product-card__body">
         <div class="product-card__top">
           <div>
@@ -164,14 +190,7 @@ function openProductModal(product) {
 
   selectors.modalContent.innerHTML = `
     <div class="modal-hero">
-      ${
-        product.image
-          ? `<div class="vial-frame">
-              <img class="vial-frame__photo" src="${escapeAttribute(product.image)}" alt="${escapeAttribute(product.name)} vial" width="280" height="280" />
-              <img class="vial-frame__logo" src="images/aura-kinetics-logo.jpg" alt="Aura Kinetics Peptide Sciences" />
-            </div>`
-          : ""
-      }
+      ${product.image ? createVialMarkup(product, 260) : ""}
       <div>
         <span class="category-pill">${escapeHtml(product.category)}</span>
         <h2 id="modal-title">${escapeHtml(product.name)}</h2>
