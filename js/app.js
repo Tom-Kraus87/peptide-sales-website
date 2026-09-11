@@ -166,7 +166,10 @@ function openProductModal(product) {
     <div class="modal-hero">
       ${
         product.image
-          ? `<img src="${escapeAttribute(product.image)}" alt="${escapeAttribute(product.name)} vial" width="220" height="220" />`
+          ? `<div class="vial-frame">
+              <img class="vial-frame__photo" src="${escapeAttribute(product.image)}" alt="${escapeAttribute(product.name)} vial" width="280" height="280" />
+              <img class="vial-frame__logo" src="images/aura-kinetics-logo.jpg" alt="Aura Kinetics Peptide Sciences" />
+            </div>`
           : ""
       }
       <div>
