@@ -457,6 +457,19 @@ input {
   color: var(--accent-dark);
 }
 
+.product-price {
+  margin: 0.2rem 0 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.product-price span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
 .description {
   margin: 0;
   color: var(--ink-soft);
@@ -470,7 +483,8 @@ input {
 }
 
 .product-card button,
-.product-card a.secondary-action {
+.product-card a.secondary-action,
+.product-card a.price-action {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -489,6 +503,16 @@ input {
   border: 1px solid var(--line);
   color: var(--ink);
   background: #fff;
+}
+
+.product-card a.price-action {
+  background: var(--gold-soft);
+  border: 1px solid rgba(196, 137, 58, 0.35);
+  color: #8a5c1f;
+}
+
+.product-card a.price-action:hover {
+  background: #ead4b0;
 }
 
 .contact {

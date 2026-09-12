@@ -29,7 +29,7 @@ async function loadCatalog() {
     data = await response.json();
   }
 
-  state.products = data.products;
+  state.products = data.products.map(applyPricing);
   state.categories = data.categories;
   renderHeroStats(data);
   renderCategoryFilters();
@@ -57,6 +57,57 @@ function renderHeroStats(data) {
       <span>Matched vial images</span>
     </div>
   `;
+}
+
+function applyPricing(product) {
+  const kit = (window.KIT_PRICES || {})[product.sku];
+  if (!kit) {
+    return product;
+  }
+
+  const perVialCost = kit.kitPrice / kit.vials;
+  const markup =
+    kit.kitPrice < (window.HIGH_PRICE_KIT_THRESHOLD || 100)
+      ? window.LOW_PRICE_MARKUP || 15
+      : window.HIGH_PRICE_MARKUP || 25;
+  const perVialPrice = roundMoney(perVialCost + markup);
+
+  return {
+    ...product,
+    kitPrice: kit.kitPrice,
+    vials: kit.vials,
+    perVialCost: roundMoney(perVialCost),
+    markup,
+    perVialPrice,
+    kitRetail: roundMoney(perVialPrice * kit.vials),
+  };
+}
+
+function roundMoney(value) {
+  return Math.round(value * 100) / 100;
+}
+
+function formatMoney(value) {
+  return value.toLocaleString("en-US", {
+    style: "currency",
+    currency: "USD",
+  });
+}
+
+function priceActionMarkup(product) {
+  if (!product.perVialPrice) {
+    return `<a class="secondary-action" href="mailto:sales@aurakinetics.com?subject=${escapeAttribute(
+      `Quote request for ${product.sku}`
+    )}&body=${escapeAttribute(
+      `Hello,\n\nI would like pricing and availability for:\n\nProduct: ${product.name}\nSKU: ${product.sku}\nStrength: ${product.strength}\n\nThank you.`
+    )}">Request quote</a>`;
+  }
+
+  return `<a class="price-action" href="mailto:sales@aurakinetics.com?subject=${escapeAttribute(
+    `Order ${product.sku} at ${formatMoney(product.perVialPrice)} per vial`
+  )}&body=${escapeAttribute(
+    `Hello,\n\nI would like to order:\n\nProduct: ${product.name}\nSKU: ${product.sku}\nStrength: ${product.strength}\nPrice: ${formatMoney(product.perVialPrice)} per vial (${product.vials}-vial kit ${formatMoney(product.kitRetail)})\n\nThank you.`
+  )}">${formatMoney(product.perVialPrice)} / vial</a>`;
 }
 
 function renderCategoryFilters() {
@@ -93,6 +144,7 @@ function getFilteredProducts() {
       product.strength,
       product.description,
       product.status,
+      product.perVialPrice ? String(product.perVialPrice) : "",
     ]
       .join(" ")
       .toLowerCase();
@@ -156,6 +208,11 @@ function createProductCard(product) {
           <div>
             <h3>${escapeHtml(product.name)}</h3>
             <p class="strength">${escapeHtml(product.strength)}</p>
+            ${
+              product.perVialPrice
+                ? `<p class="product-price">${formatMoney(product.perVialPrice)} <span>/ vial</span></p>`
+                : ""
+            }
           </div>
           <span class="sku-badge">${escapeHtml(product.sku)}</span>
         </div>
@@ -170,11 +227,7 @@ function createProductCard(product) {
         </div>
         <div class="product-card__actions">
           <button type="button" data-action="details" data-sku="${escapeAttribute(product.sku)}">View details</button>
-          <a class="secondary-action" href="mailto:sales@aurakinetics.com?subject=${escapeAttribute(
-            `Quote request for ${product.sku}`
-          )}&body=${escapeAttribute(
-            `Hello,\n\nI would like pricing and availability for:\n\nProduct: ${product.name}\nSKU: ${product.sku}\nStrength: ${product.strength}\n\nThank you.`
-          )}">Request quote</a>
+          ${priceActionMarkup(product)}
         </div>
       </div>
     </article>
@@ -195,6 +248,11 @@ function openProductModal(product) {
         <span class="category-pill">${escapeHtml(product.category)}</span>
         <h2 id="modal-title">${escapeHtml(product.name)}</h2>
         <p class="strength">${escapeHtml(product.strength)}</p>
+        ${
+          product.perVialPrice
+            ? `<p class="product-price">${formatMoney(product.perVialPrice)} <span>/ vial</span></p>`
+            : ""
+        }
         <span class="sku-badge">${escapeHtml(product.sku)}</span>
         <span class="status-badge">${escapeHtml(product.status)}</span>
         <span class="brand-label">
@@ -203,6 +261,14 @@ function openProductModal(product) {
         </span>
       </div>
     </div>
+    ${
+      product.perVialPrice
+        ? `<div class="modal-section">
+      <h4>Pricing</h4>
+      <p>${formatMoney(product.perVialPrice)} per vial. ${product.vials}-vial kit ${formatMoney(product.kitRetail)}.</p>
+    </div>`
+        : ""
+    }
     <div class="modal-section">
       <h4>Description</h4>
       <p>${escapeHtml(product.description)}</p>
@@ -216,11 +282,7 @@ function openProductModal(product) {
       ${sourceLinks}
     </div>
     <div class="product-card__actions">
-      <a class="secondary-action" href="mailto:sales@aurakinetics.com?subject=${escapeAttribute(
-        `Quote request for ${product.sku}`
-      )}&body=${escapeAttribute(
-        `Hello,\n\nI would like pricing and availability for:\n\nProduct: ${product.name}\nSKU: ${product.sku}\nStrength: ${product.strength}\n\nThank you.`
-      )}">Email sales team</a>
+      ${priceActionMarkup(product)}
       <button type="button" data-action="close-modal">Close</button>
     </div>
   `;
