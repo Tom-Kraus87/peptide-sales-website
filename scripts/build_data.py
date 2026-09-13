@@ -49,6 +49,13 @@ def parse_strengths(strength_text):
     return [part.strip() for part in parts if part.strip()]
 
 
+def sku_sort_key(sku):
+    match = re.match(r"^([A-Za-z]+)(\d+)(.*)$", sku or "")
+    if not match:
+        return (sku or "", 0, "")
+    return (match.group(1), int(match.group(2)), match.group(3))
+
+
 def main():
     excel_path = resolve_excel_path()
     sku_df = pd.read_excel(excel_path, sheet_name="SKU Index")
@@ -104,7 +111,14 @@ def main():
         "generatedAt": pd.Timestamp.now("UTC").isoformat(),
         "productCount": len(products),
         "categories": category_summary,
-        "products": sorted(products, key=lambda item: (item["category"], item["name"], item["sku"])),
+        "products": sorted(
+            products,
+            key=lambda item: (
+                item["category"],
+                item["name"],
+                sku_sort_key(item["sku"]),
+            ),
+        ),
     }
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)

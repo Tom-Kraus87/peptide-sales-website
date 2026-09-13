@@ -49,19 +49,6 @@
   ],
   "products": [
     {
-      "sku": "DS10",
-      "name": "DSIP",
-      "strength": "10mg • 10 vials",
-      "category": "Cognitive / sleep / nervous system",
-      "description": "Delta sleep-inducing peptide marketed around sleep regulation.",
-      "caution": "FDA has identified DSIP/emideltide among substances with significant safety concerns for compounding.",
-      "status": "Research / FDA concern",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
-      ],
-      "image": "vial images/DS10_DSIP_10mg_10_vials.png"
-    },
-    {
       "sku": "DS5",
       "name": "DSIP",
       "strength": "5mg • 10 vials",
@@ -73,6 +60,19 @@
         "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
       ],
       "image": "vial images/DS5_DSIP_5mg_10_vials.png"
+    },
+    {
+      "sku": "DS10",
+      "name": "DSIP",
+      "strength": "10mg • 10 vials",
+      "category": "Cognitive / sleep / nervous system",
+      "description": "Delta sleep-inducing peptide marketed around sleep regulation.",
+      "caution": "FDA has identified DSIP/emideltide among substances with significant safety concerns for compounding.",
+      "status": "Research / FDA concern",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
+      ],
+      "image": "vial images/DS10_DSIP_10mg_10_vials.png"
     },
     {
       "sku": "ET10",
@@ -114,19 +114,6 @@
       "image": "vial images/F410_FOXO4_10mg_10_vials.png"
     },
     {
-      "sku": "SK10",
-      "name": "Selank",
-      "strength": "10mg • 10 vials",
-      "category": "Cognitive / sleep / nervous system",
-      "description": "Peptide marketed for anxiety, mood, and cognition support.",
-      "caution": "FDA has identified Selank among substances with significant safety concerns for compounding.",
-      "status": "Research / FDA concern",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
-      ],
-      "image": "vial images/SK10_Selank_10mg_10_vials.png"
-    },
-    {
       "sku": "SK5",
       "name": "Selank",
       "strength": "5mg • 10 vials",
@@ -140,17 +127,17 @@
       "image": "vial images/SK5_Selank_5mg_10_vials.png"
     },
     {
-      "sku": "XA10",
-      "name": "Semax",
+      "sku": "SK10",
+      "name": "Selank",
       "strength": "10mg • 10 vials",
       "category": "Cognitive / sleep / nervous system",
-      "description": "ACTH-related peptide marketed for cognition, focus, and neuroprotection.",
-      "caution": "FDA has identified Semax among substances with significant safety concerns for compounding.",
+      "description": "Peptide marketed for anxiety, mood, and cognition support.",
+      "caution": "FDA has identified Selank among substances with significant safety concerns for compounding.",
       "status": "Research / FDA concern",
       "sourceUrls": [
         "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
       ],
-      "image": "vial images/XA10_Semax_10mg_10_vials.png"
+      "image": "vial images/SK10_Selank_10mg_10_vials.png"
     },
     {
       "sku": "XA5",
@@ -164,6 +151,19 @@
         "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
       ],
       "image": "vial images/XA5_Semax_5mg_10_vials.png"
+    },
+    {
+      "sku": "XA10",
+      "name": "Semax",
+      "strength": "10mg • 10 vials",
+      "category": "Cognitive / sleep / nervous system",
+      "description": "ACTH-related peptide marketed for cognition, focus, and neuroprotection.",
+      "caution": "FDA has identified Semax among substances with significant safety concerns for compounding.",
+      "status": "Research / FDA concern",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
+      ],
+      "image": "vial images/XA10_Semax_10mg_10_vials.png"
     },
     {
       "sku": "VP10",
@@ -231,19 +231,6 @@
       "image": "vial images/CD5_CJC-1295_with_DAC_5mg_10_vials.png"
     },
     {
-      "sku": "CND10",
-      "name": "CJC-1295 without DAC",
-      "strength": "10mg • 10 vials",
-      "category": "Growth hormone / IGF axis",
-      "description": "GHRH-style research peptide designed to stimulate growth hormone release. Without DAC generally implies shorter activity than DAC-modified versions.",
-      "caution": "FDA has listed CJC-1295 among substances with significant safety concerns for compounding.",
-      "status": "Research / FDA concern",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
-      ],
-      "image": "vial images/CND10_CJC-1295_without_DAC_10mg_10_vials.png"
-    },
-    {
       "sku": "CND2",
       "name": "CJC-1295 without DAC",
       "strength": "2mg • 10 vials",
@@ -270,6 +257,19 @@
       "image": "vial images/CND5_CJC-1295_without_DAC_5mg_10_vials.png"
     },
     {
+      "sku": "CND10",
+      "name": "CJC-1295 without DAC",
+      "strength": "10mg • 10 vials",
+      "category": "Growth hormone / IGF axis",
+      "description": "GHRH-style research peptide designed to stimulate growth hormone release. Without DAC generally implies shorter activity than DAC-modified versions.",
+      "caution": "FDA has listed CJC-1295 among substances with significant safety concerns for compounding.",
+      "status": "Research / FDA concern",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
+      ],
+      "image": "vial images/CND10_CJC-1295_without_DAC_10mg_10_vials.png"
+    },
+    {
       "sku": "CP10",
       "name": "CJC-1295 without DAC + IPA",
       "strength": "10mg • 10 vials",
@@ -281,19 +281,6 @@
         "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
       ],
       "image": "vial images/CP10_CJC-1295_without_DAC_IPA_10mg_10_vials.png"
-    },
-    {
-      "sku": "G210",
-      "name": "GHRP-2 Acetate",
-      "strength": "10mg • 10 vials",
-      "category": "Growth hormone / IGF axis",
-      "description": "Growth hormone-releasing peptide that stimulates GH release through ghrelin/GHSR pathways.",
-      "caution": "Common gray-market peptide; verify legality, sterility, and safety.",
-      "status": "Research / gray-market",
-      "sourceUrls": [
-        "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/tailor-made-compounding-llc-594743-04012020"
-      ],
-      "image": "vial images/G210_GHRP-2_Acetate_10mg_10_vials.png"
     },
     {
       "sku": "G25",
@@ -309,17 +296,17 @@
       "image": "vial images/G25_GHRP-2_Acetate_5mg_10_vials.png"
     },
     {
-      "sku": "G610",
-      "name": "GHRP-6 Acetate",
+      "sku": "G210",
+      "name": "GHRP-2 Acetate",
       "strength": "10mg • 10 vials",
       "category": "Growth hormone / IGF axis",
-      "description": "Growth hormone-releasing peptide similar to GHRP-2, often associated with GH release and appetite stimulation.",
+      "description": "Growth hormone-releasing peptide that stimulates GH release through ghrelin/GHSR pathways.",
       "caution": "Common gray-market peptide; verify legality, sterility, and safety.",
       "status": "Research / gray-market",
       "sourceUrls": [
         "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/tailor-made-compounding-llc-594743-04012020"
       ],
-      "image": "vial images/G610_GHRP-6_Acetate_10mg_10_vials.png"
+      "image": "vial images/G210_GHRP-2_Acetate_10mg_10_vials.png"
     },
     {
       "sku": "G65",
@@ -333,6 +320,19 @@
         "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/tailor-made-compounding-llc-594743-04012020"
       ],
       "image": "vial images/G65_GHRP-6_Acetate_5mg_10_vials.png"
+    },
+    {
+      "sku": "G610",
+      "name": "GHRP-6 Acetate",
+      "strength": "10mg • 10 vials",
+      "category": "Growth hormone / IGF axis",
+      "description": "Growth hormone-releasing peptide similar to GHRP-2, often associated with GH release and appetite stimulation.",
+      "caution": "Common gray-market peptide; verify legality, sterility, and safety.",
+      "status": "Research / gray-market",
+      "sourceUrls": [
+        "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/tailor-made-compounding-llc-594743-04012020"
+      ],
+      "image": "vial images/G610_GHRP-6_Acetate_10mg_10_vials.png"
     },
     {
       "sku": "H10",
@@ -400,19 +400,6 @@
       "image": "vial images/IG1_IGF-1_LR3_1mg_10_vials.png"
     },
     {
-      "sku": "IP10",
-      "name": "Ipamorelin",
-      "strength": "10mg • 10 vials",
-      "category": "Growth hormone / IGF axis",
-      "description": "Growth hormone secretagogue that acts through ghrelin/GHSR-related signaling to stimulate GH release.",
-      "caution": "FDA has identified serious concerns/lack of sufficient safety information for ipamorelin compounding.",
-      "status": "Research / FDA concern",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
-      ],
-      "image": "vial images/IP10_Ipamorelin_10mg_10_vials.png"
-    },
-    {
       "sku": "IP5",
       "name": "Ipamorelin",
       "strength": "5mg • 10 vials",
@@ -424,6 +411,19 @@
         "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
       ],
       "image": "vial images/IP5_Ipamorelin_5mg_10_vials.png"
+    },
+    {
+      "sku": "IP10",
+      "name": "Ipamorelin",
+      "strength": "10mg • 10 vials",
+      "category": "Growth hormone / IGF axis",
+      "description": "Growth hormone secretagogue that acts through ghrelin/GHSR-related signaling to stimulate GH release.",
+      "caution": "FDA has identified serious concerns/lack of sufficient safety information for ipamorelin compounding.",
+      "status": "Research / FDA concern",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
+      ],
+      "image": "vial images/IP10_Ipamorelin_10mg_10_vials.png"
     },
     {
       "sku": "FM2",
@@ -478,20 +478,6 @@
       "image": "vial images/SMO10_Sermorelin_10mg_10_vials.png"
     },
     {
-      "sku": "TSM10",
-      "name": "Tesamorelin",
-      "strength": "10mg • 10 vials",
-      "category": "Growth hormone / IGF axis",
-      "description": "Growth hormone-releasing factor analog used by prescription to reduce excess abdominal fat in adults with HIV-associated lipodystrophy.",
-      "caution": "Not a general weight-loss drug; prescription-only context.",
-      "status": "FDA-approved drug exists",
-      "sourceUrls": [
-        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf",
-        "https://www.mayoclinic.org/drugs-supplements/tesamorelin-subcutaneous-route/description/drg-20074632"
-      ],
-      "image": "vial images/TSM10_Tesamorelin_10mg_10_vials.png"
-    },
-    {
       "sku": "TSM5",
       "name": "Tesamorelin",
       "strength": "5mg • 10 vials",
@@ -506,17 +492,18 @@
       "image": "vial images/TSM5_Tesamorelin_5mg_10_vials.png"
     },
     {
-      "sku": "GTT1500",
-      "name": "Glutathione",
-      "strength": "1500mg • 1 vial",
-      "category": "Immune / antimicrobial / antioxidant",
-      "description": "Major antioxidant tripeptide involved in cellular redox balance and detoxification pathways.",
-      "caution": "Commonly marketed in injection/IV clinics; clinical claims vary by use case.",
-      "status": "Support compound",
+      "sku": "TSM10",
+      "name": "Tesamorelin",
+      "strength": "10mg • 10 vials",
+      "category": "Growth hormone / IGF axis",
+      "description": "Growth hormone-releasing factor analog used by prescription to reduce excess abdominal fat in adults with HIV-associated lipodystrophy.",
+      "caution": "Not a general weight-loss drug; prescription-only context.",
+      "status": "FDA-approved drug exists",
       "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf",
+        "https://www.mayoclinic.org/drugs-supplements/tesamorelin-subcutaneous-route/description/drg-20074632"
       ],
-      "image": "vial images/GTT1500_Glutathione_1500mg_1_vial.png"
+      "image": "vial images/TSM10_Tesamorelin_10mg_10_vials.png"
     },
     {
       "sku": "GTT600",
@@ -530,6 +517,19 @@
         "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
       ],
       "image": "vial images/GTT600_Glutathione_600mg_1_vial.png"
+    },
+    {
+      "sku": "GTT1500",
+      "name": "Glutathione",
+      "strength": "1500mg • 1 vial",
+      "category": "Immune / antimicrobial / antioxidant",
+      "description": "Major antioxidant tripeptide involved in cellular redox balance and detoxification pathways.",
+      "caution": "Commonly marketed in injection/IV clinics; clinical claims vary by use case.",
+      "status": "Support compound",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/GTT1500_Glutathione_1500mg_1_vial.png"
     },
     {
       "sku": "375",
@@ -558,19 +558,6 @@
       "image": "vial images/TY10_Thymalin_10mg_10_vials.png"
     },
     {
-      "sku": "TA10",
-      "name": "Thymosin Alpha-1",
-      "strength": "10mg • 10 vials",
-      "category": "Immune / antimicrobial / antioxidant",
-      "description": "Immune-modulating peptide studied/used in some countries for immune-related indications.",
-      "caution": "FDA has identified thymosin alpha-1 among substances with safety concerns/lack of adequate data for compounding.",
-      "status": "Research / FDA concern",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
-      ],
-      "image": "vial images/TA10_Thymosin_Alpha-1_10mg_10_vials.png"
-    },
-    {
       "sku": "TA5",
       "name": "Thymosin Alpha-1",
       "strength": "5mg • 10 vials",
@@ -582,6 +569,19 @@
         "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
       ],
       "image": "vial images/TA5_Thymosin_Alpha-1_5mg_10_vials.png"
+    },
+    {
+      "sku": "TA10",
+      "name": "Thymosin Alpha-1",
+      "strength": "10mg • 10 vials",
+      "category": "Immune / antimicrobial / antioxidant",
+      "description": "Immune-modulating peptide studied/used in some countries for immune-related indications.",
+      "caution": "FDA has identified thymosin alpha-1 among substances with safety concerns/lack of adequate data for compounding.",
+      "status": "Research / FDA concern",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
+      ],
+      "image": "vial images/TA10_Thymosin_Alpha-1_10mg_10_vials.png"
     },
     {
       "sku": "10AD",
@@ -623,19 +623,6 @@
       "image": "vial images/AP5_Adipotide_5mg_10_vials.png"
     },
     {
-      "sku": "CGL10",
-      "name": "Cagrilintide",
-      "strength": "10mg • 10 vials",
-      "category": "Metabolic / GLP-1 & weight management",
-      "description": "Long-acting amylin analog studied for appetite reduction and weight management, often discussed alongside GLP-1 therapies.",
-      "caution": "Investigational in many markets; verify legal status and approved use.",
-      "status": "Investigational / research",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
-      ],
-      "image": "vial images/CGL10_Cagrilintide_10mg_10_vials.png"
-    },
-    {
       "sku": "CGL5",
       "name": "Cagrilintide",
       "strength": "5mg • 10 vials",
@@ -647,6 +634,19 @@
         "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
       ],
       "image": "vial images/CGL5_Cagrilintide_5mg_10_vials.png"
+    },
+    {
+      "sku": "CGL10",
+      "name": "Cagrilintide",
+      "strength": "10mg • 10 vials",
+      "category": "Metabolic / GLP-1 & weight management",
+      "description": "Long-acting amylin analog studied for appetite reduction and weight management, often discussed alongside GLP-1 therapies.",
+      "caution": "Investigational in many markets; verify legal status and approved use.",
+      "status": "Investigational / research",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/CGL10_Cagrilintide_10mg_10_vials.png"
     },
     {
       "sku": "CS10",
@@ -662,6 +662,71 @@
       "image": "vial images/CS10_Cagrilintide_Semaglutide_10mg_10_vials.png"
     },
     {
+      "sku": "RT5",
+      "name": "GLP3",
+      "strength": "5mg • 10 vials",
+      "category": "Metabolic / GLP-1 & weight management",
+      "description": "Investigational triple receptor agonist targeting GIP, GLP-1, and glucagon pathways. Studied for obesity and metabolic disease.",
+      "caution": "Investigational; not an FDA-approved retail peptide product.",
+      "status": "Investigational / research",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/RT5_Retatrutide_5mg_10_vials.png"
+    },
+    {
+      "sku": "RT10",
+      "name": "GLP3",
+      "strength": "10mg • 10 vials",
+      "category": "Metabolic / GLP-1 & weight management",
+      "description": "Investigational triple receptor agonist targeting GIP, GLP-1, and glucagon pathways. Studied for obesity and metabolic disease.",
+      "caution": "Investigational; not an FDA-approved retail peptide product.",
+      "status": "Investigational / research",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/RT10_Retatrutide_10mg_10_vials.png"
+    },
+    {
+      "sku": "RT20",
+      "name": "GLP3",
+      "strength": "20mg • 10 vials",
+      "category": "Metabolic / GLP-1 & weight management",
+      "description": "Investigational triple receptor agonist targeting GIP, GLP-1, and glucagon pathways. Studied for obesity and metabolic disease.",
+      "caution": "Investigational; not an FDA-approved retail peptide product.",
+      "status": "Investigational / research",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/RT20_Retatrutide_20mg_10_vials.png"
+    },
+    {
+      "sku": "RT30",
+      "name": "GLP3",
+      "strength": "30mg • 10 vials",
+      "category": "Metabolic / GLP-1 & weight management",
+      "description": "Investigational triple receptor agonist targeting GIP, GLP-1, and glucagon pathways. Studied for obesity and metabolic disease.",
+      "caution": "Investigational; not an FDA-approved retail peptide product.",
+      "status": "Investigational / research",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/RT30_Retatrutide_30mg_10_vials.png"
+    },
+    {
+      "sku": "RT60",
+      "name": "GLP3",
+      "strength": "60mg • 10 vials",
+      "category": "Metabolic / GLP-1 & weight management",
+      "description": "Investigational triple receptor agonist targeting GIP, GLP-1, and glucagon pathways. Studied for obesity and metabolic disease.",
+      "caution": "Investigational; not an FDA-approved retail peptide product.",
+      "status": "Investigational / research",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/RT60_Retatrutide_60mg_10_vials.png"
+    },
+    {
       "sku": "MDT10",
       "name": "Mazdutide",
       "strength": "10mg • 10 vials",
@@ -675,69 +740,18 @@
       "image": "vial images/MDT10_Mazdutide_10mg_10_vials.png"
     },
     {
-      "sku": "RT10",
-      "name": "Retatrutide",
-      "strength": "10mg • 10 vials",
-      "category": "Metabolic / GLP-1 & weight management",
-      "description": "Investigational triple receptor agonist targeting GIP, GLP-1, and glucagon pathways. Studied for obesity and metabolic disease.",
-      "caution": "Investigational; not an FDA-approved retail peptide product.",
-      "status": "Investigational / research",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
-      ],
-      "image": "vial images/RT10_Retatrutide_10mg_10_vials.png"
-    },
-    {
-      "sku": "RT20",
-      "name": "Retatrutide",
-      "strength": "20mg • 10 vials",
-      "category": "Metabolic / GLP-1 & weight management",
-      "description": "Investigational triple receptor agonist targeting GIP, GLP-1, and glucagon pathways. Studied for obesity and metabolic disease.",
-      "caution": "Investigational; not an FDA-approved retail peptide product.",
-      "status": "Investigational / research",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
-      ],
-      "image": "vial images/RT20_Retatrutide_20mg_10_vials.png"
-    },
-    {
-      "sku": "RT30",
-      "name": "Retatrutide",
-      "strength": "30mg • 10 vials",
-      "category": "Metabolic / GLP-1 & weight management",
-      "description": "Investigational triple receptor agonist targeting GIP, GLP-1, and glucagon pathways. Studied for obesity and metabolic disease.",
-      "caution": "Investigational; not an FDA-approved retail peptide product.",
-      "status": "Investigational / research",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
-      ],
-      "image": "vial images/RT30_Retatrutide_30mg_10_vials.png"
-    },
-    {
-      "sku": "RT5",
-      "name": "Retatrutide",
+      "sku": "SM5",
+      "name": "Semaglutide",
       "strength": "5mg • 10 vials",
       "category": "Metabolic / GLP-1 & weight management",
-      "description": "Investigational triple receptor agonist targeting GIP, GLP-1, and glucagon pathways. Studied for obesity and metabolic disease.",
-      "caution": "Investigational; not an FDA-approved retail peptide product.",
-      "status": "Investigational / research",
+      "description": "Prescription GLP-1 receptor agonist used in approved products for type 2 diabetes and chronic weight management. Helps reduce appetite, food intake, and improve glucose regulation.",
+      "caution": "Approved only in regulated prescription products. Unapproved or counterfeit compounded/gray-market versions are a major safety and quality concern.",
+      "status": "FDA-approved drug exists",
       "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215256s024lbl.pdf",
+        "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"
       ],
-      "image": "vial images/RT5_Retatrutide_5mg_10_vials.png"
-    },
-    {
-      "sku": "RT60",
-      "name": "Retatrutide",
-      "strength": "60mg • 10 vials",
-      "category": "Metabolic / GLP-1 & weight management",
-      "description": "Investigational triple receptor agonist targeting GIP, GLP-1, and glucagon pathways. Studied for obesity and metabolic disease.",
-      "caution": "Investigational; not an FDA-approved retail peptide product.",
-      "status": "Investigational / research",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
-      ],
-      "image": "vial images/RT60_Retatrutide_60mg_10_vials.png"
+      "image": "vial images/SM5_Semaglutide_5mg_10_vials.png"
     },
     {
       "sku": "SM10",
@@ -782,20 +796,6 @@
       "image": "vial images/SM20_Semaglutide_20mg_10_vials.png"
     },
     {
-      "sku": "SM5",
-      "name": "Semaglutide",
-      "strength": "5mg • 10 vials",
-      "category": "Metabolic / GLP-1 & weight management",
-      "description": "Prescription GLP-1 receptor agonist used in approved products for type 2 diabetes and chronic weight management. Helps reduce appetite, food intake, and improve glucose regulation.",
-      "caution": "Approved only in regulated prescription products. Unapproved or counterfeit compounded/gray-market versions are a major safety and quality concern.",
-      "status": "FDA-approved drug exists",
-      "sourceUrls": [
-        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/215256s024lbl.pdf",
-        "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"
-      ],
-      "image": "vial images/SM5_Semaglutide_5mg_10_vials.png"
-    },
-    {
       "sku": "SUR10",
       "name": "Survodutide",
       "strength": "10mg • 10 vials",
@@ -807,6 +807,20 @@
         "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
       ],
       "image": "vial images/SUR10_Survodutide_10mg_10_vials.png"
+    },
+    {
+      "sku": "TR5",
+      "name": "Tirzepatide",
+      "strength": "5mg • 10 vials",
+      "category": "Metabolic / GLP-1 & weight management",
+      "description": "Prescription dual GIP and GLP-1 receptor agonist used in approved products for type 2 diabetes and chronic weight management. Helps with appetite regulation, satiety, and glucose control.",
+      "caution": "Approved only in regulated prescription products. Unapproved or counterfeit compounded/gray-market versions are a major safety and quality concern.",
+      "status": "FDA-approved drug exists",
+      "sourceUrls": [
+        "https://www.fda.gov/news-events/press-announcements/fda-approves-new-medication-chronic-weight-management",
+        "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"
+      ],
+      "image": "vial images/TR5_Tirzepatide_5mg_10_vials.png"
     },
     {
       "sku": "TR10",
@@ -877,20 +891,6 @@
         "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"
       ],
       "image": "vial images/TR40_Tirzepatide_40mg_10_vials.png"
-    },
-    {
-      "sku": "TR5",
-      "name": "Tirzepatide",
-      "strength": "5mg • 10 vials",
-      "category": "Metabolic / GLP-1 & weight management",
-      "description": "Prescription dual GIP and GLP-1 receptor agonist used in approved products for type 2 diabetes and chronic weight management. Helps with appetite regulation, satiety, and glucose control.",
-      "caution": "Approved only in regulated prescription products. Unapproved or counterfeit compounded/gray-market versions are a major safety and quality concern.",
-      "status": "FDA-approved drug exists",
-      "sourceUrls": [
-        "https://www.fda.gov/news-events/press-announcements/fda-approves-new-medication-chronic-weight-management",
-        "https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/fdas-concerns-unapproved-glp-1-drugs-used-weight-loss"
-      ],
-      "image": "vial images/TR5_Tirzepatide_5mg_10_vials.png"
     },
     {
       "sku": "TR60",
@@ -985,19 +985,6 @@
       "image": "vial images/332_SLU-PP-322_5mg_10_vials.png"
     },
     {
-      "sku": "LC1200",
-      "name": "L-Carnitine",
-      "strength": "1200mg • 10 vials",
-      "category": "Metabolic / support compounds",
-      "description": "Nutrient involved in fatty-acid transport into mitochondria. Commonly sold as a supplement or injection.",
-      "caution": "Effects vary by use case; not a magic fat-loss product.",
-      "status": "Support compound",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
-      ],
-      "image": "vial images/LC1200_L-Carnitine_1200mg_10_vials.png"
-    },
-    {
       "sku": "LC600",
       "name": "L-Carnitine",
       "strength": "600mg • 10 vials",
@@ -1009,6 +996,19 @@
         "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
       ],
       "image": "vial images/LC600_L-Carnitine_600mg_10_vials.png"
+    },
+    {
+      "sku": "LC1200",
+      "name": "L-Carnitine",
+      "strength": "1200mg • 10 vials",
+      "category": "Metabolic / support compounds",
+      "description": "Nutrient involved in fatty-acid transport into mitochondria. Commonly sold as a supplement or injection.",
+      "caution": "Effects vary by use case; not a magic fat-loss product.",
+      "status": "Support compound",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/LC1200_L-Carnitine_1200mg_10_vials.png"
     },
     {
       "sku": "LC216",
@@ -1037,19 +1037,6 @@
       "image": "vial images/NJ100_NAD_100mg_10_vials.png"
     },
     {
-      "sku": "NJ1000",
-      "name": "NAD+",
-      "strength": "1000mg • 10 vials",
-      "category": "Metabolic / support compounds",
-      "description": "Coenzyme involved in redox reactions, mitochondrial function, and cellular energy metabolism.",
-      "caution": "Popular in anti-aging clinics, but many claims exceed established clinical evidence.",
-      "status": "Support compound",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
-      ],
-      "image": "vial images/NJ1000_NAD_1000mg_10_vials.png"
-    },
-    {
       "sku": "NJ500",
       "name": "NAD+",
       "strength": "500mg • 10 vials",
@@ -1061,6 +1048,19 @@
         "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
       ],
       "image": "vial images/NJ500_NAD_500mg_10_vials.png"
+    },
+    {
+      "sku": "NJ1000",
+      "name": "NAD+",
+      "strength": "1000mg • 10 vials",
+      "category": "Metabolic / support compounds",
+      "description": "Coenzyme involved in redox reactions, mitochondrial function, and cellular energy metabolism.",
+      "caution": "Popular in anti-aging clinics, but many claims exceed established clinical evidence.",
+      "status": "Support compound",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/NJ1000_NAD_1000mg_10_vials.png"
     },
     {
       "sku": "RA10",
@@ -1102,19 +1102,6 @@
       "image": "vial images/BB10_BPC_5mg_TB_5mg_10mg_10_vials.png"
     },
     {
-      "sku": "BC10",
-      "name": "BPC-157",
-      "strength": "10mg • 10 vials",
-      "category": "Recovery / repair / inflammation",
-      "description": "Research peptide marketed for tendon, ligament, gut, and injury-recovery claims.",
-      "caution": "FDA has identified BPC-157 among substances with safety concerns/lack of adequate supporting data for compounding.",
-      "status": "Research / FDA concern",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
-      ],
-      "image": "vial images/BC10_BPC-157_10mg_10_vials.png"
-    },
-    {
       "sku": "BC5",
       "name": "BPC-157",
       "strength": "5mg • 10 vials",
@@ -1128,17 +1115,17 @@
       "image": "vial images/BC5_BPC-157_5mg_10_vials.png"
     },
     {
-      "sku": "CU100",
-      "name": "GHK-Cu",
-      "strength": "100mg • 10 vials",
+      "sku": "BC10",
+      "name": "BPC-157",
+      "strength": "10mg • 10 vials",
       "category": "Recovery / repair / inflammation",
-      "description": "Copper-binding peptide used mostly in skin-care, wound-healing, hair, and cosmetic research contexts.",
-      "caution": "Injectable use raises different safety and sterility concerns than topical cosmetic use.",
-      "status": "Cosmetic / repair",
+      "description": "Research peptide marketed for tendon, ligament, gut, and injury-recovery claims.",
+      "caution": "FDA has identified BPC-157 among substances with safety concerns/lack of adequate supporting data for compounding.",
+      "status": "Research / FDA concern",
       "sourceUrls": [
-        "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/tailor-made-compounding-llc-594743-04012020"
+        "https://www.fda.gov/drugs/human-drug-compounding/certain-bulk-drug-substances-use-compounding-may-present-significant-safety-risks"
       ],
-      "image": "vial images/CU100_GHK-Cu_100mg_10_vials.png"
+      "image": "vial images/BC10_BPC-157_10mg_10_vials.png"
     },
     {
       "sku": "CU50",
@@ -1152,6 +1139,19 @@
         "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/tailor-made-compounding-llc-594743-04012020"
       ],
       "image": "vial images/CU50_GHK-Cu_50mg_10_vials.png"
+    },
+    {
+      "sku": "CU100",
+      "name": "GHK-Cu",
+      "strength": "100mg • 10 vials",
+      "category": "Recovery / repair / inflammation",
+      "description": "Copper-binding peptide used mostly in skin-care, wound-healing, hair, and cosmetic research contexts.",
+      "caution": "Injectable use raises different safety and sterility concerns than topical cosmetic use.",
+      "status": "Cosmetic / repair",
+      "sourceUrls": [
+        "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/tailor-made-compounding-llc-594743-04012020"
+      ],
+      "image": "vial images/CU100_GHK-Cu_100mg_10_vials.png"
     },
     {
       "sku": "BBG70",
@@ -1219,19 +1219,6 @@
       "image": "vial images/2S50_SS-31_50mg_10_vials.png"
     },
     {
-      "sku": "BT10",
-      "name": "TB500 / Thymosin B4 Acetate",
-      "strength": "10mg • 10 vials",
-      "category": "Recovery / repair / inflammation",
-      "description": "Peptide related to thymosin beta-4/fragments, marketed for wound healing, tissue repair, and inflammation modulation.",
-      "caution": "Research/gray-market context; product identity and safety require verification.",
-      "status": "Research",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
-      ],
-      "image": "vial images/BT10_TB500_Thymosin_B4_Acetate_10mg_10_vials.png"
-    },
-    {
       "sku": "BT5",
       "name": "TB500 / Thymosin B4 Acetate",
       "strength": "5mg • 10 vials",
@@ -1245,17 +1232,17 @@
       "image": "vial images/BT5_TB500_Thymosin_B4_Acetate_5mg_10_vials.png"
     },
     {
-      "sku": "G10K",
-      "name": "HCG",
-      "strength": "10000iu • 1 vial",
-      "category": "Sexual / reproductive / hormone-related",
-      "description": "Human chorionic gonadotropin is used in fertility/hormonal contexts. FDA labeling says HCG is not effective for obesity or fat-loss treatment.",
-      "caution": "Prescription-only context; not a legitimate weight-loss drug.",
-      "status": "FDA-approved drug exists",
+      "sku": "BT10",
+      "name": "TB500 / Thymosin B4 Acetate",
+      "strength": "10mg • 10 vials",
+      "category": "Recovery / repair / inflammation",
+      "description": "Peptide related to thymosin beta-4/fragments, marketed for wound healing, tissue repair, and inflammation modulation.",
+      "caution": "Research/gray-market context; product identity and safety require verification.",
+      "status": "Research",
       "sourceUrls": [
-        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/017692s028s036s043lbl.pdf"
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
       ],
-      "image": "vial images/G10K_HCG_10000iu_1_vial.png"
+      "image": "vial images/BT10_TB500_Thymosin_B4_Acetate_10mg_10_vials.png"
     },
     {
       "sku": "G5K",
@@ -1271,6 +1258,19 @@
       "image": "vial images/G5K_HCG_5000iu_1_vial.png"
     },
     {
+      "sku": "G10K",
+      "name": "HCG",
+      "strength": "10000iu • 1 vial",
+      "category": "Sexual / reproductive / hormone-related",
+      "description": "Human chorionic gonadotropin is used in fertility/hormonal contexts. FDA labeling says HCG is not effective for obesity or fat-loss treatment.",
+      "caution": "Prescription-only context; not a legitimate weight-loss drug.",
+      "status": "FDA-approved drug exists",
+      "sourceUrls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/017692s028s036s043lbl.pdf"
+      ],
+      "image": "vial images/G10K_HCG_10000iu_1_vial.png"
+    },
+    {
       "sku": "G75",
       "name": "HMG",
       "strength": "75iu • 10 vials",
@@ -1284,19 +1284,6 @@
       "image": "vial images/G75_HMG_75iu_10_vials.png"
     },
     {
-      "sku": "KS10",
-      "name": "Kisspeptin-10",
-      "strength": "10mg • 10 vials",
-      "category": "Sexual / reproductive / hormone-related",
-      "description": "Peptide involved in reproductive hormone signaling, influencing GnRH/LH/FSH pathways in research contexts.",
-      "caution": "Research/hormone-pathway compound; not a casual wellness product.",
-      "status": "Research",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
-      ],
-      "image": "vial images/KS10_Kisspeptin-10_10mg_10_vials.png"
-    },
-    {
       "sku": "KS5",
       "name": "Kisspeptin-10",
       "strength": "5mg • 10 vials",
@@ -1308,6 +1295,19 @@
         "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
       ],
       "image": "vial images/KS5_Kisspeptin-10_5mg_10_vials.png"
+    },
+    {
+      "sku": "KS10",
+      "name": "Kisspeptin-10",
+      "strength": "10mg • 10 vials",
+      "category": "Sexual / reproductive / hormone-related",
+      "description": "Peptide involved in reproductive hormone signaling, influencing GnRH/LH/FSH pathways in research contexts.",
+      "caution": "Research/hormone-pathway compound; not a casual wellness product.",
+      "status": "Research",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/KS10_Kisspeptin-10_10mg_10_vials.png"
     },
     {
       "sku": "MT1",
@@ -1375,19 +1375,6 @@
       "image": "vial images/P41_PT-141_10mg_10_vials.png"
     },
     {
-      "sku": "AA10",
-      "name": "Acetic Acid Solution",
-      "strength": "10ml • 10 vials",
-      "category": "Supplies / solvents",
-      "description": "Acidic solution sometimes used for peptide handling/reconstitution contexts.",
-      "caution": "Supply/lab item, not a wellness drug. Concentration and intended use must be verified.",
-      "status": "Supply",
-      "sourceUrls": [
-        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
-      ],
-      "image": "vial images/AA10_Acetic_Acid_Solution_10ml_10_vials.png"
-    },
-    {
       "sku": "AA3",
       "name": "Acetic Acid Solution",
       "strength": "3ml • 10 vials",
@@ -1401,17 +1388,17 @@
       "image": "vial images/AA3_Acetic_Acid_Solution_3ml_10_vials.png"
     },
     {
-      "sku": "WA10",
-      "name": "Bacteriostatic Water",
+      "sku": "AA10",
+      "name": "Acetic Acid Solution",
       "strength": "10ml • 10 vials",
       "category": "Supplies / solvents",
-      "description": "Sterile water with preservative commonly used to reconstitute certain injectable medications.",
-      "caution": "Supply item, not an active drug. Sterility/source matters.",
+      "description": "Acidic solution sometimes used for peptide handling/reconstitution contexts.",
+      "caution": "Supply/lab item, not a wellness drug. Concentration and intended use must be verified.",
       "status": "Supply",
       "sourceUrls": [
         "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
       ],
-      "image": "vial images/WA10_Bacteriostatic_Water_10ml_10_vials.png"
+      "image": "vial images/AA10_Acetic_Acid_Solution_10ml_10_vials.png"
     },
     {
       "sku": "WA3",
@@ -1425,6 +1412,19 @@
         "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
       ],
       "image": "vial images/WA3_Bacteriostatic_Water_3ml_10_vials.png"
+    },
+    {
+      "sku": "WA10",
+      "name": "Bacteriostatic Water",
+      "strength": "10ml • 10 vials",
+      "category": "Supplies / solvents",
+      "description": "Sterile water with preservative commonly used to reconstitute certain injectable medications.",
+      "caution": "Supply item, not an active drug. Sterility/source matters.",
+      "status": "Supply",
+      "sourceUrls": [
+        "https://www.fda.gov/drugs/human-drug-compounding/compounding-and-fda-questions-and-answers"
+      ],
+      "image": "vial images/WA10_Bacteriostatic_Water_10ml_10_vials.png"
     }
   ]
 }

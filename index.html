@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Aura Kinetics Peptide Sciences — browse our full catalog of research peptides with detailed descriptions, strengths, and product imagery."
+      content="Aura Kinetics Human Optimization Systems — browse our full catalog of research peptides with detailed descriptions, strengths, and product imagery."
     />
-    <title>Aura Kinetics Peptide Sciences | Research Catalog</title>
-    <link rel="icon" href="images/aura-kinetics-logo.jpg" type="image/jpeg" />
+    <title>Aura Kinetics | Human Optimization Systems</title>
+    <link rel="icon" href="images/aura-kinetics-logo.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,37 +23,42 @@
         <a class="brand" href="#top">
           <img
             class="brand-logo"
-            src="images/aura-kinetics-logo.jpg"
-            alt="Aura Kinetics Peptide Sciences"
+            src="images/aura-kinetics-logo.png"
+            alt="Aura Kinetics Human Optimization Systems"
             width="56"
-            height="32"
+            height="56"
           />
           <span class="brand-text">
             <span class="brand-name">Aura Kinetics</span>
-            <span class="brand-tagline">Peptide Sciences</span>
+            <span class="brand-tagline">Human Optimization Systems</span>
           </span>
         </a>
-        <a class="header-cta" href="#catalog">View catalog</a>
+        <div class="header-actions">
+          <button class="cart-button" id="cart-button" type="button" data-action="open-cart">
+            Cart
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+        </div>
       </div>
     </header>
 
     <main id="top">
-      <section class="brand-banner" aria-label="Aura Kinetics Peptide Sciences">
+      <section class="brand-banner" aria-label="Aura Kinetics Human Optimization Systems">
         <div class="brand-banner__glow" aria-hidden="true"></div>
         <div class="container brand-banner__inner">
           <img
             class="brand-banner__logo"
-            src="images/aura-kinetics-logo.jpg"
-            alt="Aura Kinetics Peptide Sciences"
+            src="images/aura-kinetics-logo.png"
+            alt="Aura Kinetics Human Optimization Systems"
             width="720"
-            height="380"
+            height="720"
           />
           <div class="brand-banner__copy">
-            <p class="eyebrow">Aura Kinetics Peptide Sciences</p>
+            <p class="eyebrow">Aura Kinetics Human Optimization Systems</p>
             <h1>Official research peptide catalog</h1>
             <p class="hero-copy">
-              Browse Aura Kinetics products with matching vial images, strengths,
-              categories, and detailed descriptions from our research catalog.
+              Browse Aura Kinetics products by the vial, with matching images,
+              strengths, categories, and detailed descriptions.
             </p>
             <div class="hero-stats" id="hero-stats" aria-live="polite"></div>
           </div>
@@ -101,8 +106,8 @@
             <p class="eyebrow">Aura Kinetics sales</p>
             <h2>Ready to place an order?</h2>
             <p>
-              Contact the Aura Kinetics sales team with the SKU codes you need.
-              We will confirm availability, pricing, and shipping details.
+              Contact the Aura Kinetics sales team with the SKUs and vial quantities
+              you need. We will confirm availability and shipping details.
             </p>
           </div>
           <div class="contact-card">
@@ -120,21 +125,37 @@
       <div class="container footer-inner">
         <div class="footer-brand">
           <img
-            src="images/aura-kinetics-logo.jpg"
-            alt="Aura Kinetics Peptide Sciences"
+            src="images/aura-kinetics-logo.png"
+            alt="Aura Kinetics Human Optimization Systems"
             width="180"
-            height="95"
+            height="180"
           />
         </div>
         <p>
-          <strong>Important:</strong> Aura Kinetics Peptide Sciences products listed
+          <strong>Important:</strong> Aura Kinetics Human Optimization Systems products listed
           here are for research and catalog reference only. This site does not provide
           medical advice, dosing guidance, or recommendations for use. Verify legality,
           licensing, and product quality before purchase.
         </p>
-        <p class="footer-meta">© Aura Kinetics Peptide Sciences. Catalog generated from categorized product descriptions.</p>
+        <p class="footer-meta">© Aura Kinetics Human Optimization Systems. Catalog generated from categorized product descriptions.</p>
       </div>
     </footer>
+
+    <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-labelledby="cart-title">
+      <div class="cart-drawer__header">
+        <h2 id="cart-title">Your cart</h2>
+        <button class="modal-close" type="button" data-action="close-cart" aria-label="Close cart">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="cart-drawer__items" id="cart-items"></div>
+      <div class="cart-drawer__footer">
+        <p class="cart-subtotal">Subtotal <strong id="cart-subtotal">$0.00</strong></p>
+        <a class="price-action cart-checkout" id="cart-checkout" href="#">Email this order</a>
+        <button class="ghost-button" id="cart-clear" type="button">Clear cart</button>
+      </div>
+    </aside>
 
     <dialog class="product-modal" id="product-modal" aria-labelledby="modal-title">
       <div class="modal-shell">
@@ -147,6 +168,7 @@
 
     <script src="js/products-data.js"></script>
     <script src="js/prices.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
