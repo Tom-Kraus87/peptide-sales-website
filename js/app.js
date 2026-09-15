@@ -250,14 +250,16 @@ function createVialMarkup(product, size = 180) {
         height="${Math.round((size * 240) / 180)}"
       />
       <div class="vial-label">
-        <div class="vial-label__brand">
-          <img src="images/aura-kinetics-logo.png" alt="" width="24" height="24" />
-          <span>Aura Kinetics</span>
+        <div class="vial-label__art">
+          <img src="images/vial-label-bust.png" alt="" width="48" height="64" />
         </div>
-        <div class="vial-label__body">
+        <div class="vial-label__copy">
           <strong class="vial-label__name">${escapeHtml(product.name)}</strong>
-          <span class="vial-label__strength">${escapeHtml(product.displayStrength)}</span>
-          <span class="vial-label__sku">SKU ${escapeHtml(product.sku)}</span>
+          <div class="vial-label__row">
+            <span class="vial-label__strength">${escapeHtml(product.displayStrength)}</span>
+            <img class="vial-label__mark" src="images/aura-kinetics-mark.svg" alt="" width="28" height="20" />
+          </div>
+          <span class="vial-label__disclaimer">For research use only</span>
         </div>
       </div>
     </div>
