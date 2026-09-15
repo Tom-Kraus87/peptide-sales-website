@@ -110,6 +110,7 @@ function compareProducts(a, b) {
 
 function applyPricing(product) {
   const kit = (window.KIT_PRICES || {})[product.sku];
+  const directPrice = (window.VIAL_PRICES || {})[product.sku];
   const name = PRODUCT_NAME_OVERRIDES[product.name] || product.name;
   const withStrength = {
     ...product,
@@ -118,8 +119,15 @@ function applyPricing(product) {
     displayStrength: displayStrength(product.strength),
   };
 
-  if (!kit) {
+  if (!kit && directPrice == null) {
     return withStrength;
+  }
+
+  if (!kit) {
+    return {
+      ...withStrength,
+      perVialPrice: Math.round(directPrice),
+    };
   }
 
   const perVialCost = kit.kitPrice / kit.vials;
@@ -127,7 +135,7 @@ function applyPricing(product) {
     kit.kitPrice < (window.HIGH_PRICE_KIT_THRESHOLD || 100)
       ? window.LOW_PRICE_MARKUP || 15
       : window.HIGH_PRICE_MARKUP || 25;
-  const perVialPrice = Math.round(perVialCost + markup);
+  const perVialPrice = Math.round(directPrice ?? perVialCost + markup);
 
   return {
     ...withStrength,

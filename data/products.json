@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-06-10T01:52:44.919999+00:00",
-  "productCount": 105,
+  "productCount": 106,
   "categories": [
     {
       "name": "Cognitive / sleep / nervous system",
@@ -495,6 +495,20 @@
       "sku": "TSM10",
       "name": "Tesamorelin",
       "strength": "10mg • 10 vials",
+      "category": "Growth hormone / IGF axis",
+      "description": "Growth hormone-releasing factor analog used by prescription to reduce excess abdominal fat in adults with HIV-associated lipodystrophy.",
+      "caution": "Not a general weight-loss drug; prescription-only context.",
+      "status": "FDA-approved drug exists",
+      "sourceUrls": [
+        "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf",
+        "https://www.mayoclinic.org/drugs-supplements/tesamorelin-subcutaneous-route/description/drg-20074632"
+      ],
+      "image": "vial images/TSM10_Tesamorelin_10mg_10_vials.png"
+    },
+    {
+      "sku": "TSM20",
+      "name": "Tesamorelin",
+      "strength": "20mg • 10 vials",
       "category": "Growth hormone / IGF axis",
       "description": "Growth hormone-releasing factor analog used by prescription to reduce excess abdominal fat in adults with HIV-associated lipodystrophy.",
       "caution": "Not a general weight-loss drug; prescription-only context.",

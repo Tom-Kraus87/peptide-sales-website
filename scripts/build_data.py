@@ -13,6 +13,26 @@ IMAGES_DIR = os.path.join(BASE, "vial images")
 OUTPUT_PATH = os.path.join(BASE, "data", "products.json")
 DATA_SCRIPT_PATH = os.path.join(BASE, "js", "products-data.js")
 
+MANUAL_PRODUCTS = [
+    {
+        "sku": "TSM20",
+        "name": "Tesamorelin",
+        "strength": "20mg • 10 vials",
+        "category": "Growth hormone / IGF axis",
+        "description": (
+            "Growth hormone-releasing factor analog used by prescription to reduce "
+            "excess abdominal fat in adults with HIV-associated lipodystrophy."
+        ),
+        "caution": "Not a general weight-loss drug; prescription-only context.",
+        "status": "FDA-approved drug exists",
+        "sourceUrls": [
+            "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/022505s020lbl.pdf",
+            "https://www.mayoclinic.org/drugs-supplements/tesamorelin-subcutaneous-route/description/drg-20074632",
+        ],
+        "image": "vial images/TSM10_Tesamorelin_10mg_10_vials.png",
+    },
+]
+
 
 def resolve_excel_path():
     for path in EXCEL_CANDIDATES:
@@ -101,6 +121,13 @@ def main():
         }
         products.append(product)
         categories.setdefault(product["category"], []).append(product_name)
+
+    existing_skus = {product["sku"] for product in products}
+    for product in MANUAL_PRODUCTS:
+        if product["sku"] in existing_skus:
+            continue
+        products.append(product)
+        categories.setdefault(product["category"], []).append(product["name"])
 
     category_summary = [
         {"name": name, "count": len(set(items))}

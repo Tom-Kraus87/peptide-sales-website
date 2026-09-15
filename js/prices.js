@@ -106,3 +106,15 @@ window.KIT_PRICES = {
 window.LOW_PRICE_MARKUP = 15;
 window.HIGH_PRICE_MARKUP = 25;
 window.HIGH_PRICE_KIT_THRESHOLD = 100;
+
+window.VIAL_PRICES = {
+  CU100: 35,
+  CU50: 18,
+  Klow: 85,
+  RT5: 15,
+  RT10: 30,
+  RT20: 60,
+  RT30: 90,
+  RT60: 180,
+  TSM20: 65,
+};
