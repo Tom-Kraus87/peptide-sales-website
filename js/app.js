@@ -56,7 +56,7 @@ function renderHeroStats(data) {
     </div>
     <div class="stat-card">
       <strong>${uniqueProducts}</strong>
-      <span>Unique peptides</span>
+      <span>Unique formulas</span>
     </div>
     <div class="stat-card">
       <strong>${data.categories.length}</strong>
@@ -76,6 +76,23 @@ const PRODUCT_NAME_OVERRIDES = {
 const PRODUCT_SEARCH_ALIASES = {
   GLP3: "Retatrutide",
 };
+
+const ACTUAL_PRODUCT_IMAGES = {
+  AD10: "images/actual-products/adamax-10mg.jpg",
+  BC5: "images/actual-products/bpc157-5mg.jpg",
+  BC10: "images/actual-products/bpc157-10mg.jpg",
+  CU50: "images/actual-products/ghkcu-50mg.jpg",
+  CU100: "images/actual-products/ghkcu-100mg.jpg",
+  RT5: "images/actual-products/glp3-5mg.jpg",
+  RT10: "images/actual-products/glp3-10mg.jpg",
+  RT20: "images/actual-products/glp3-20mg.jpg",
+  RT30: "images/actual-products/glp3-30mg.jpg",
+  RT60: "images/actual-products/glp3-60mg.jpg",
+};
+
+function sanitizePublicCopy(value) {
+  return String(value || "").replace(/\b[\w-]*peptides?\b/gi, "compound");
+}
 
 function skuSortParts(sku) {
   const match = String(sku).match(/^([A-Za-z]+)(\d+)(.*)$/);
@@ -116,6 +133,11 @@ function applyPricing(product) {
     ...product,
     name,
     searchAliases: PRODUCT_SEARCH_ALIASES[name] || product.name,
+    image: ACTUAL_PRODUCT_IMAGES[product.sku] || product.image,
+    isActualProductPhoto: Boolean(ACTUAL_PRODUCT_IMAGES[product.sku]),
+    description: sanitizePublicCopy(product.description),
+    caution: sanitizePublicCopy(product.caution),
+    status: sanitizePublicCopy(product.status),
     displayStrength: displayStrength(product.strength),
   };
 
@@ -247,30 +269,42 @@ function createVialMarkup(product, size = 180) {
     return `<div class="description">Image unavailable</div>`;
   }
 
+  if (product.isActualProductPhoto) {
+    return `
+      <figure class="actual-product-frame">
+        <img
+          class="actual-product-photo"
+          src="${escapeAttribute(product.image)}"
+          alt="Aura Kinetics ${escapeAttribute(product.name)} ${escapeAttribute(product.displayStrength)} product vials"
+          loading="lazy"
+          width="${size}"
+          height="${size}"
+        />
+        <figcaption>Actual product · Not for human consumption</figcaption>
+      </figure>
+    `;
+  }
+
   return `
-    <div class="vial-frame">
+    <figure class="mock-product-frame">
       <img
-        class="vial-frame__photo"
-        src="${escapeAttribute(product.image)}"
-        alt="${escapeAttribute(product.name)} vial - ${escapeAttribute(product.displayStrength)}"
+        class="mock-product-photo"
+        src="images/product-vial-template.jpg?v=2"
+        alt="Aura Kinetics ${escapeAttribute(product.name)} ${escapeAttribute(product.displayStrength)} vial mockup"
         loading="lazy"
         width="${size}"
-        height="${Math.round((size * 240) / 180)}"
+        height="${Math.round((size * 600) / 549)}"
       />
-      <div class="vial-label">
-        <div class="vial-label__art">
-          <img src="images/vial-label-bust.png" alt="" width="48" height="64" />
+      <div class="mock-product-label" aria-hidden="true">
+        <strong class="mock-product-label__name">${escapeHtml(product.name)}</strong>
+        <div class="mock-product-label__row">
+          <span>${escapeHtml(product.displayStrength)}</span>
+          <img src="images/aura-kinetics-mark.svg" alt="" width="34" height="25" />
         </div>
-        <div class="vial-label__copy">
-          <strong class="vial-label__name">${escapeHtml(product.name)}</strong>
-          <div class="vial-label__row">
-            <span class="vial-label__strength">${escapeHtml(product.displayStrength)}</span>
-            <img class="vial-label__mark" src="images/aura-kinetics-mark.svg" alt="" width="28" height="20" />
-          </div>
-          <span class="vial-label__disclaimer">For research use only</span>
-        </div>
+        <span class="mock-product-label__disclaimer">Not for human consumption</span>
       </div>
-    </div>
+      <figcaption>Product mockup · Not for human consumption</figcaption>
+    </figure>
   `;
 }
 
@@ -295,6 +329,7 @@ function createProductCard(product) {
         <p class="description">${escapeHtml(product.description)}</p>
         <div class="product-card__labels">
           <span class="status-badge">${escapeHtml(product.status)}</span>
+          <span class="consumption-warning">Not for human consumption</span>
           <span class="brand-label">
             <img src="images/aura-kinetics-logo.png" alt="" width="18" height="18" />
             Aura Kinetics Human Optimization Systems
@@ -330,6 +365,7 @@ function openProductModal(product) {
         }
         <span class="sku-badge">${escapeHtml(product.sku)}</span>
         <span class="status-badge">${escapeHtml(product.status)}</span>
+        <span class="consumption-warning">Not for human consumption</span>
         <span class="brand-label">
           <img src="images/aura-kinetics-logo.png" alt="" width="18" height="18" />
           Aura Kinetics Human Optimization Systems

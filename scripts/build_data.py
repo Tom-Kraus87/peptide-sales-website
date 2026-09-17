@@ -15,6 +15,17 @@ DATA_SCRIPT_PATH = os.path.join(BASE, "js", "products-data.js")
 
 MANUAL_PRODUCTS = [
     {
+        "sku": "AD10",
+        "name": "Adamax",
+        "strength": "10mg • 1 vial",
+        "category": "Cognitive / sleep / nervous system",
+        "description": "Research compound marketed for cognitive and nervous-system studies.",
+        "caution": "Research-use product; safety and efficacy are not established.",
+        "status": "Research",
+        "sourceUrls": [],
+        "image": "images/actual-products/adamax-10mg.jpg",
+    },
+    {
         "sku": "TSM20",
         "name": "Tesamorelin",
         "strength": "20mg • 10 vials",

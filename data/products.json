@@ -1,10 +1,10 @@
 {
   "generatedAt": "2026-06-10T01:52:44.919999+00:00",
-  "productCount": 106,
+  "productCount": 107,
   "categories": [
     {
       "name": "Cognitive / sleep / nervous system",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Cosmetic / body-contouring",
@@ -48,6 +48,17 @@
     }
   ],
   "products": [
+    {
+      "sku": "AD10",
+      "name": "Adamax",
+      "strength": "10mg • 1 vial",
+      "category": "Cognitive / sleep / nervous system",
+      "description": "Research compound marketed for cognitive and nervous-system studies.",
+      "caution": "Research-use product; safety and efficacy are not established.",
+      "status": "Research",
+      "sourceUrls": [],
+      "image": "images/actual-products/adamax-10mg.jpg"
+    },
     {
       "sku": "DS5",
       "name": "DSIP",

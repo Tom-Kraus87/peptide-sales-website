@@ -79,6 +79,19 @@ input {
   border-bottom: 1px solid rgba(215, 224, 234, 0.8);
 }
 
+.site-safety-notice {
+  padding: 0.65rem 1rem;
+  text-align: center;
+  background: var(--accent-dark);
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+}
+
+.site-safety-notice strong {
+  color: #f5cf91;
+}
+
 .header-inner {
   display: flex;
   align-items: center;
@@ -431,6 +444,21 @@ input {
   text-transform: uppercase;
 }
 
+.consumption-warning {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: #7d1d1d;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .sku-badge {
   background: #edf2f7;
   color: var(--ink-soft);
@@ -674,6 +702,101 @@ input {
   object-fit: contain;
 }
 
+.actual-product-frame {
+  position: relative;
+  width: min(100%, 260px);
+  margin: 0;
+}
+
+.actual-product-photo,
+.mock-product-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(16, 32, 51, 0.14);
+}
+
+.actual-product-frame figcaption,
+.mock-product-frame figcaption {
+  position: absolute;
+  right: 0.45rem;
+  bottom: 0.45rem;
+  left: 0.45rem;
+  padding: 0.28rem 0.4rem;
+  border-radius: 7px;
+  background: rgba(10, 20, 33, 0.88);
+  color: #fff;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.mock-product-frame {
+  position: relative;
+  width: min(100%, 260px);
+  margin: 0;
+}
+
+.mock-product-label {
+  position: absolute;
+  top: 46.4%;
+  left: 53.8%;
+  width: 38.9%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4em;
+  overflow: hidden;
+  padding: 0.65em 0.55em;
+  color: #111;
+  font-size: 8px;
+  line-height: 1;
+  transform: rotate(0.7deg);
+}
+
+.mock-product-label__name {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 1.65em;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  text-transform: uppercase;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.mock-product-label__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3em;
+  font-size: 1.35em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.mock-product-label__row img {
+  width: 2.5em;
+  height: 1.85em;
+  object-fit: contain;
+}
+
+.mock-product-label__disclaimer {
+  margin-top: auto;
+  padding-bottom: 0.2em;
+  font-size: 0.83em;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+}
+
 .vial-label {
   position: absolute;
   left: 23.7%;
@@ -687,30 +810,6 @@ input {
   box-shadow: 0 1px 3px rgba(16, 32, 51, 0.22);
   color: #111;
   font-size: 6.2px;
-}
-
-.vial-label__art {
-  flex: 0 0 30%;
-  background: #000;
-  overflow: hidden;
-}
-
-.vial-label__art img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 18%;
-}
-
-.vial-label__copy {
-  position: relative;
-  flex: 1 1 auto;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.08em;
-  padding: 0.28em 0.3em 0.24em 0.3em;
   background:
     linear-gradient(
       118deg,
@@ -724,7 +823,7 @@ input {
     );
 }
 
-.vial-label__copy::before {
+.vial-label::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -735,6 +834,46 @@ input {
     rgba(255, 170, 220, 0.22) 0.64em 0.72em
   );
   pointer-events: none;
+}
+
+.vial-label__art {
+  flex: 0 0 30%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(16, 32, 51, 0.14);
+  overflow: hidden;
+}
+
+.vial-label__art img {
+  width: 74%;
+  height: 2.3em;
+  object-fit: contain;
+}
+
+.vial-label__art span {
+  margin-top: -0.2em;
+  font-size: 0.64em;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 0.78;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.vial-label__copy {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.08em;
+  padding: 0.28em 0.3em 0.24em 0.3em;
 }
 
 .vial-label__name,
